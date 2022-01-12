@@ -1,0 +1,25 @@
+<h2>User List</h2>
+<table class = "table table-striped">
+  <thead>
+
+       <tr>
+           <th>userFirstName</th>
+           <th>surName</th>
+           <th>dob</th>
+           <th>dateOfJoining</th>
+           <th>pinCode</th>
+       </tr>
+  </thead>
+     <tbody>
+
+        <tr *ngFor = "let user of users" >
+            <td> {{ user.userFirstName }}</td>
+                <td> {{ user.surName }}</td>
+                <td> {{ user.dob }}</td>
+                <td> {{ user.dateOfJoining }}</td>
+                <td> {{ user.pinCode }}</td>
+
+        </tr>
+     </tbody>
+
+</table>
